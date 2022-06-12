@@ -1,0 +1,30 @@
+{
+  "name": "rustraf",
+  "version": "0.0.1",
+  "description": "Super-fast alternative for rimraf",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stijnvanhulle/rustraf.git"
+  },
+  "license": "MIT",
+  "author": "Stijn Van Hulle <stijn@stijnvanhulle.be",
+  "scripts": {
+    "build": "yarn build:current && yarn build:mac && yarn build:win && yarn build:linux",
+    "build:current": "cargo build -p rustraf --release",
+    "build:mac": "cargo build -p rustraf --release --target x86_64-apple-darwin && cargo build -p rustraf --release --target aarch64-apple-darwin",
+    "build:win": "cargo build -p rustraf --release --target x86_64-pc-windows-msvc",
+    "build:linux": "cargo build -p rustraf --release --target x86_64-unknown-linux-gnu && cargo build -p rustraf --release --target armv7-unknown-linux-gnueabihf"
+  },
+  "engines": {
+    "node": ">=14.18"
+  },
+  "files": [
+
+  ],
+  "optionalDependencies": {
+    "@rustraf/core-darwin-arm64": "0.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

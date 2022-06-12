@@ -1,0 +1,34 @@
+{
+  "name": "@rustraf/core-darwin-arm64",
+  "version": "0.0.1",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "main": "rustraf",
+  "files": [
+    "rustraf"
+  ],
+  "description": "Super-fast alternative for rimraf",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stijnvanhulle/rustraf.git"
+  },
+  "license": "MIT",
+  "author": "Stijn Van Hulle",
+  "engines": {
+    "node": ">=14.18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/stijnvanhulle/rustraf/issues"
+  },
+  "homepage": "https://github.com/stijnvanhulle/rustraf#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
