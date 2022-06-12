@@ -1,0 +1,106 @@
+name: Build package and publish
+
+on:
+  push:
+    branches:    
+      - main
+      - 'releases/**'
+  pull_request:
+  workflow_dispatch:
+
+env: 
+  NODE_VERSION: 'lts/*'
+  FOLDER: .
+
+defaults:
+  run:
+    working-directory: .
+
+jobs:
+  test: 
+    name: 'Node ${{ matrix.node }}'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['lts/*']
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'yarn'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Run unit tests
+        run: yarn test
+        
+      - name: Run linter
+        run: yarn run lint
+
+  build:
+    name: 'Build package and publish'
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # We need to fetch all branches and commits so that Nx affected has a base to compare against.
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'yarn'
+          registry-url: 'https://registry.npmjs.org'
+
+      - uses: nrwl/nx-set-shas@v2
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Bump version
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          yarn run release:affected
+          
+      - name: Creating .env file
+        uses: iamsauravsharma/create-dotenv@v1.2.0
+        with:
+          env-prefix: 'ENV_' 
+          directory: ${{ env.FOLDER }}
+        env:
+          ENV_VERSION: ${{ env.VERSION }}
+          
+      - name: Build affected packages
+        run: yarn build:affected
+
+      - name: Update package.json and changelog.md
+        working-directory: .
+        run: |
+          git push --follow-tags -v    
+        env:
+          VERSION: ${{ env.VERSION }}
+      
+      - name: Publish affected packages on npm
+        run: yarn deploy:affected --registry https://registry.npmjs.org
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'yarn'
+          registry-url: 'https://npm.pkg.github.com'
+                
+      - name: Publish affected packages on Github
+        run: yarn deploy:affected --registry https://registry.npmjs.org
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
