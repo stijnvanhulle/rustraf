@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.8 (2022-06-13)
+
+
+### Bug Fixes
+
+* update npm build ([b654bdc](https://github.com/stijnvanhulle/rustraf/commit/b654bdc049f65eec9d9d6ca50ad1f9d67d05a945))
+
 ### 0.0.7 (2022-06-13)
 
 
