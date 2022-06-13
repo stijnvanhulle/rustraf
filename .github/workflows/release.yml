@@ -246,4 +246,7 @@ jobs:
       - name: Update package.json and changelog.md
         working-directory: .
         run: |
+          yarn run version
+          git add package.json **/package.json
+          git commit -m "upgrade: packages"
           git push --follow-tags -v    
