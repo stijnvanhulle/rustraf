@@ -1,7 +1,7 @@
 {
   "name": "@rustraf/core",
   "description": "Super-fast alternative for rimraf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "types": "index.d.ts",
   "repository": {
@@ -19,8 +19,11 @@
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
     "@napi-rs/cli": "^2.10.0",
-    "ava": "^4.3.0"
+    "ava": "^4.3.0",
+    "standard-version": "^9.5.0"
   },
   "engines": {
     "node": ">=14.18"
@@ -32,9 +35,21 @@
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
     "test": "ava",
-    "version": "napi version"
+    "version": "napi version",
+    "release": "standard-version",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "pre-commit": "echo 'pre-commit not configured'",
+    "pre-push": "yarn typecheck"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "optionalDependencies": {
+    "@rustraf/core-win32-x64-msvc": "0.0.2",
+    "@rustraf/core-darwin-x64": "0.0.2",
+    "@rustraf/core-linux-x64-gnu": "0.0.2",
+    "@rustraf/core-darwin-arm64": "0.0.2"
   }
 }
