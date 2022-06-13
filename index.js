@@ -236,6 +236,7 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { sum } = nativeBinding
+const { removeFile, sum } = nativeBinding
 
+module.exports.removeFile = removeFile
 module.exports.sum = sum

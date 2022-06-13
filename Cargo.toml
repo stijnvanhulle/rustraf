@@ -1,14 +1,22 @@
 [package]
 edition = "2021"
 name = "rustraf_core"
-version = "0.0.2"
+version = "0.0.8"
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
+futures = "0.3"
 # Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
-napi = { version = "2.5.0", default-features = false, features = ["napi4"] }
+napi = { version = "2.5.0", default-features = false, features = [
+  "napi8",
+  "serde-json",
+  "async",
+  "experimental",
+  "latin1",
+  "chrono_date",
+] }
 napi-derive = "2.5.0"
 
 [build-dependencies]
