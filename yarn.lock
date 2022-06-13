@@ -232,25 +232,25 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@rustraf/core-darwin-arm64@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.npmjs.org/@rustraf/core-darwin-arm64/-/core-darwin-arm64-0.0.7.tgz#3a2cc1fe160d275f01df5a4f3b7e98cc2b530842"
-  integrity sha512-apZDaWLSWf/q5cyZmZqupsiNs9cxJtBk9H78SJEU6181QHizzfCPMIwxjg/ZYyhi3/siWLbVNpW2WlJqB85HWQ==
+"@rustraf/core-darwin-arm64@0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@rustraf/core-darwin-arm64/-/core-darwin-arm64-0.0.8.tgz#41da285cd4fc617865e8b9962fc2bfcb3e4ec5b6"
+  integrity sha512-tFyGi+WexA9/bvet1g2KTkNhy+lNVkWeqS94gTs0JWpN8J/thmJsJz4IC2vAqiO+apSplv04CwyrEixhWq2WNg==
 
-"@rustraf/core-darwin-x64@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.npmjs.org/@rustraf/core-darwin-x64/-/core-darwin-x64-0.0.7.tgz#38c55b3d537d7b3ccd26ed3cfab0aff375571f14"
-  integrity sha512-uTFLfoO0n9+0fsT/5DXiE9FokqZyP8Gvtn0iu/Y8XI/N+xwRw2c9Ei0i9eXO3yiFxxpEKJ8mAEcAoNIJek8pIA==
+"@rustraf/core-darwin-x64@0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@rustraf/core-darwin-x64/-/core-darwin-x64-0.0.8.tgz#6c661789e3967904f938207172979f3fc29c5ec2"
+  integrity sha512-ke0dPlZ42HMzrqe1/2BkLkVFDg+DkQtXjK8HRr6awqLLplfN6QpEXJZlqaTHwJq3xVGsaosaXGzpSnTLuoN1/A==
 
-"@rustraf/core-linux-x64-gnu@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.npmjs.org/@rustraf/core-linux-x64-gnu/-/core-linux-x64-gnu-0.0.7.tgz#ce505bdf0d78536beb09d73f76c87b268f875585"
-  integrity sha512-rtOagWkWvtrR0Nl2/6mCTn1gxD4q+7UDc7RIYEmTxuRggYFZbKYY6zsVQkW9hLN2Otrc3wdfZ2dw8U8d56+3JQ==
+"@rustraf/core-linux-x64-gnu@0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@rustraf/core-linux-x64-gnu/-/core-linux-x64-gnu-0.0.8.tgz#d16fc84593279b8f354e757489766eda504061e1"
+  integrity sha512-Ajb5HxQoMnObqE7H65ogp8C1eXe4K2DfLoGiGs/wiPFgW8VXeNS38YdPURuDoKaQ1wc9pKElNikz7eIyDfx1MA==
 
-"@rustraf/core-win32-x64-msvc@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.npmjs.org/@rustraf/core-win32-x64-msvc/-/core-win32-x64-msvc-0.0.7.tgz#9bdc4010369b7bd7febfa651b5673b4a7fa50a1b"
-  integrity sha512-FCcomQN5vzvWyU7pN2C4rpumEY6O4UxY7Kn1DR6dbSPGLY9I+aWvWP59UFEFVKpgcnz+K8ezh0W+qOw+ofsBjA==
+"@rustraf/core-win32-x64-msvc@0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@rustraf/core-win32-x64-msvc/-/core-win32-x64-msvc-0.0.8.tgz#7239b341dc15bd012cc5126d3ba7c8ee11c1acb5"
+  integrity sha512-Y4iE3wNmCGH/Quma41fY+Penug3T/mCvSVpRKVfUu0T2PwxUm5Z/W/ZRh930IAF7aekm/IMsmKWWHYLSFasf8A==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"
