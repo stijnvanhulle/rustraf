@@ -1,6 +1,6 @@
 {
   "name": "@rustraf/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Super-fast alternative for rimraf",
   "repository": {
     "type": "git",
