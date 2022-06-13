@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.4 (2022-06-13)
+
+
+### Bug Fixes
+
+* lock update ([0ee65df](https://github.com/stijnvanhulle/rustraf/commit/0ee65dfbb6612f81aca8b45369c6f9f7911c9c04))
+
 ### 0.0.3 (2022-06-13)
 
 
