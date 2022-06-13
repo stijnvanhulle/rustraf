@@ -232,6 +232,26 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@rustraf/core-darwin-arm64@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/@rustraf/core-darwin-arm64/-/core-darwin-arm64-0.0.2.tgz#6b874188e6936de63d3fda6ff47d6fe0f32a7865"
+  integrity sha512-YSdbugwhKxdEqf0ITteaHLUELAPxL01OZmPQHout/r+MTNGe5ouNWe8QoaYcpr3VJ3edrgq9ns2o/2FwmZ7QQg==
+
+"@rustraf/core-darwin-x64@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/@rustraf/core-darwin-x64/-/core-darwin-x64-0.0.2.tgz#830931571741cbec1c2a6b2418b5b299f1216853"
+  integrity sha512-fJWSiUlqM2jCZs9yNHuClcdoN3V/zVosBP+nBPjVg7+3dyonFPyCM0gJe2LoC3QHE830pZ0hje8nNqaT7yL26Q==
+
+"@rustraf/core-linux-x64-gnu@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/@rustraf/core-linux-x64-gnu/-/core-linux-x64-gnu-0.0.2.tgz#c28fc8ec2fa1c995b4ecabe5ab8c3bcec4ad34da"
+  integrity sha512-9tKnz1Ylunghwb4b8eAPcJ40tHf3pGEgZmJIptG3WVmMGRGDBF8L2fJy9FZXOUWZOoelmB5EwFRPJ91k5Siqfw==
+
+"@rustraf/core-win32-x64-msvc@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/@rustraf/core-win32-x64-msvc/-/core-win32-x64-msvc-0.0.2.tgz#2c032b6b0562d5680663e1a92405a8fd6024cb01"
+  integrity sha512-XBPdcMTnOKGFfXqmrGCscrEo53reSTVQiJlvUYpCy4Hozp5bInZXP7fu1IR0cI0vKWoUW7yT33jmlRNS2McCcw==
+
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"
   resolved "https://registry.npmjs.org/@tsconfig/node10/-/node10-1.0.9.tgz#df4907fc07a886922637b15e02d4cebc4c0021b2"
