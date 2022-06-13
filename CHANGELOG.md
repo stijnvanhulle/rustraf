@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.7 (2022-06-13)
+
+
+### Bug Fixes
+
+* overwrite version ([c65d7f4](https://github.com/stijnvanhulle/rustraf/commit/c65d7f4efabfbbdd5579c2249f9d38aba92b1e63))
+
 ### 0.0.4 (2022-06-13)
 
 
