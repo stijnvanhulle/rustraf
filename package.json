@@ -10,7 +10,11 @@
   "author": "Stijn Van Hulle",
   "main": "index.js",
   "types": "index.d.ts",
-  "files": [],
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
@@ -35,10 +39,10 @@
     "standard-version": "^9.5.0"
   },
   "optionalDependencies": {
-    "@rustraf/core-win32-x64-msvc": "0.0.4",
-    "@rustraf/core-darwin-x64": "0.0.4",
-    "@rustraf/core-linux-x64-gnu": "0.0.4",
-    "@rustraf/core-darwin-arm64": "0.0.4"
+    "@rustraf/core-win32-x64-msvc": "0.0.7",
+    "@rustraf/core-darwin-x64": "0.0.7",
+    "@rustraf/core-linux-x64-gnu": "0.0.7",
+    "@rustraf/core-darwin-arm64": "0.0.7"
   },
   "engines": {
     "node": ">=14.18"
