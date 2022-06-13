@@ -1,6 +1,6 @@
 {
   "name": "@rustraf/core",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "description": "Super-fast alternative for rimraf",
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
     "pre-push": "",
     "prepublishOnly": "napi prepublish -t npm",
     "release": "standard-version",
+    "postrelease": "napi version",
     "release:major": "standard-version --release-as major",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
