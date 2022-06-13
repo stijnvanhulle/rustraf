@@ -1,22 +1,30 @@
 {
   "name": "@rustraf/core",
-  "description": "Super-fast alternative for rimraf",
   "version": "0.0.2",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "description": "Super-fast alternative for rimraf",
   "repository": {
     "type": "git",
     "url": "git://github.com/stijnvanhulle/rustraf.git"
   },
   "license": "MIT",
   "author": "Stijn Van Hulle <stijn@stijnvanhulle.be",
-  "napi": {
-    "name": "core",
-    "triples": {
-      "additional": [
-        "aarch64-apple-darwin"
-      ]
-    }
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [],
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform",
+    "pre-commit": "echo 'pre-commit not configured'",
+    "pre-push": "",
+    "prepublishOnly": "napi prepublish -t npm",
+    "release": "standard-version",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "test": "ava",
+    "typecheck": "tsc --noEmit",
+    "version": "napi version"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
@@ -25,31 +33,24 @@
     "ava": "^4.3.0",
     "standard-version": "^9.5.0"
   },
+  "optionalDependencies": {
+    "@rustraf/core-darwin-arm64": "0.0.2",
+    "@rustraf/core-darwin-x64": "0.0.2",
+    "@rustraf/core-linux-x64-gnu": "0.0.2",
+    "@rustraf/core-win32-x64-msvc": "0.0.2"
+  },
   "engines": {
     "node": ">=14.18"
-  },
-  "files": [],
-  "scripts": {
-    "artifacts": "napi artifacts",
-    "build": "napi build --platform --release",
-    "build:debug": "napi build --platform",
-    "prepublishOnly": "napi prepublish -t npm",
-    "test": "ava",
-    "version": "napi version",
-    "release": "standard-version",
-    "release:major": "standard-version --release-as major",
-    "release:minor": "standard-version --release-as minor",
-    "release:patch": "standard-version --release-as patch",
-    "pre-commit": "echo 'pre-commit not configured'",
-    "pre-push": "yarn typecheck"
   },
   "publishConfig": {
     "access": "public"
   },
-  "optionalDependencies": {
-    "@rustraf/core-win32-x64-msvc": "0.0.2",
-    "@rustraf/core-darwin-x64": "0.0.2",
-    "@rustraf/core-linux-x64-gnu": "0.0.2",
-    "@rustraf/core-darwin-arm64": "0.0.2"
+  "napi": {
+    "name": "core",
+    "triples": {
+      "additional": [
+        "aarch64-apple-darwin"
+      ]
+    }
   }
 }
