@@ -239,7 +239,6 @@ jobs:
           yarn run release
       - name: Publish
         run: |
-          yarn run prepublishOnly
           npm publish --access public --registry https://registry.npmjs.org
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
