@@ -39,3 +39,16 @@ yarn global add @rustraf/core
 
 it can be used as a global
 command `rustraf <path> [<path> ...]` which is useful for cross platform support.
+
+
+## Compared with rimraf
+Removing node_modules with a size of 597,5 MB
+
+| Package | Speed                                         |
+|---------|-----------------------------------------------|
+| rimraf  | 1.61s user 11.26s system 218% cpu 5.899 total |
+| rustraf | 0.28s user 5.79s system 84% cpu 7.218 total   |
+
+
+
+
