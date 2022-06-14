@@ -20,7 +20,7 @@ const builder = yargs(process.argv.slice(2))
       files.forEach((file) => {
         const pathTo = fs.existsSync(file)
           ? file
-          : path.resolve(__dirname, file);
+          : path.resolve(process.cwd(), file);
 
         rustraf.remove(pathTo);
       });
