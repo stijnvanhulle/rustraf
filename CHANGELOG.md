@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.10 (2022-06-14)
+
+
+### Features
+
+* rustraf cli ([1d9cb25](https://github.com/stijnvanhulle/rustraf/commit/1d9cb251eafcde7cb8e18869ba10128606b26314))
+
 ### 0.0.9 (2022-06-13)
 
 
