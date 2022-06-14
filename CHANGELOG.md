@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.12 (2022-06-14)
+
+
+### Features
+
+* rm -rf ([2e23414](https://github.com/stijnvanhulle/rustraf/commit/2e23414ca7885ed28728c83e0b7c0724944bca10))
+
 ### 0.0.11 (2022-06-14)
 
 
