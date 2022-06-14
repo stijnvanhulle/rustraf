@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 0.1.0 (2022-06-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* rustraf main package
+
+### Features
+
+* rustraf main package ([e843772](https://github.com/stijnvanhulle/rustraf/commit/e84377230dd6a006635244b0658184cf3cdaecbd))
+
 ### 0.0.12 (2022-06-14)
 
 
