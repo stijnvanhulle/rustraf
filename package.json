@@ -10,7 +10,11 @@
   "author": "Stijn Van Hulle",
   "main": "index.js",
   "types": "index.d.ts",
+  "bin": {
+    "rustraf": "./bin/cli.js"
+  },
   "files": [
+    "bin",
     "index.js",
     "index.d.ts",
     "CHANGELOG.md"
@@ -47,6 +51,7 @@
   "engines": {
     "node": ">=14.18"
   },
+  "preferGlobal": true,
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
