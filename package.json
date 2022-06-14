@@ -33,14 +33,17 @@
     "release:patch": "standard-version --release-as patch",
     "test": "ava",
     "typecheck": "tsc --noEmit",
-    "version": "napi version"
+    "version": "napi version",
+    "upgrade": "ncu -u",
+    "upgrade:local": "ncu --interactive --doctor"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "@napi-rs/cli": "^2.10.0",
     "ava": "~4.2.0",
-    "standard-version": "^9.5.0"
+    "standard-version": "^9.5.0",
+    "npm-check-updates": "^13.1.5"
   },
   "optionalDependencies": {
     "@rustraf/core-win32-x64-msvc": "0.0.12",
