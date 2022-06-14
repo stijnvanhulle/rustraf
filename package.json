@@ -35,6 +35,7 @@
     "typecheck": "tsc --noEmit",
     "version": "napi version",
     "upgrade": "ncu -u",
+    "upgrade:rustraf": "ncu -u '/rustraf/'",
     "upgrade:local": "ncu --interactive --doctor"
   },
   "devDependencies": {

@@ -243,6 +243,13 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - name: Update generic package
+        run: |
+          bash $GITHUB_WORKSPACE/.github/version.sh
+          npm publish --access public --registry https://registry.npmjs.org
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Update package.json and changelog.md
         working-directory: .
         run: |
