@@ -232,25 +232,25 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@rustraf/core-darwin-arm64@0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@rustraf/core-darwin-arm64/-/core-darwin-arm64-0.0.10.tgz#b6a9dc75ff828cbb155b981f93a92aeb63b65d3a"
-  integrity sha512-xsk5KHuVat6YqC8JEnxUCB4lSjy0Q6JgTwlwRPRcviaFFz1kSs8Mw2B8/kZGOjnJyvWqlwYEKaR4ftq8kQQtUg==
+"@rustraf/core-darwin-arm64@0.0.11":
+  version "0.0.11"
+  resolved "https://registry.npmjs.org/@rustraf/core-darwin-arm64/-/core-darwin-arm64-0.0.11.tgz#740ce06c956d69fbd3fbcf0500144d67b7e83e83"
+  integrity sha512-kt3KIjpLdLWZEeg4wpn0Fy8pmcUg7oNoUezVyIrDA89a9jvzkNcUnTfJrc8OCly0Nu8pmL3Gcv4LZNh9LWF3SA==
 
-"@rustraf/core-darwin-x64@0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@rustraf/core-darwin-x64/-/core-darwin-x64-0.0.10.tgz#436365f8c0548e3b9057b55039ec31264a54a43f"
-  integrity sha512-SIxsDYdATplEHKUJJX3HJG1GXHsb8eAbGXisinvqUk1zSPwej8MXe1F35sw+cSZpoz7o172NpZho8Sob7nGFwA==
+"@rustraf/core-darwin-x64@0.0.11":
+  version "0.0.11"
+  resolved "https://registry.npmjs.org/@rustraf/core-darwin-x64/-/core-darwin-x64-0.0.11.tgz#31841e4167a04d3c7258110d7c2d7f51941371bc"
+  integrity sha512-F536RCs0fH8J8Uc8YF0IcryxM1j4EsG0GRMkZiqWyXlgKFnKLHHXQ5lmm0ohWJ5c5ifgvGvus3ZZsFvIR5dn9Q==
 
-"@rustraf/core-linux-x64-gnu@0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@rustraf/core-linux-x64-gnu/-/core-linux-x64-gnu-0.0.10.tgz#202df13f2bdcaba0d32fca562c95c30af430671b"
-  integrity sha512-IYBXrlroaP7lFsVkoaLtkMVQZQWAlIfzddAJs5aafOv5uqhHTvSCaDMJ2G/NVuqwTsxsUgPE/BL4n00bsQcayw==
+"@rustraf/core-linux-x64-gnu@0.0.11":
+  version "0.0.11"
+  resolved "https://registry.npmjs.org/@rustraf/core-linux-x64-gnu/-/core-linux-x64-gnu-0.0.11.tgz#3ff19bec0999e4dd4fe1c252954953de977ac716"
+  integrity sha512-IOkJJWLDXY4nEzPV0aOTIAgqZaCifdvcAuQESEVCvmY7/MdHowlQUElZIu++F6MT5gR6X/5Rv1iTAPRrFSyiSA==
 
-"@rustraf/core-win32-x64-msvc@0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@rustraf/core-win32-x64-msvc/-/core-win32-x64-msvc-0.0.10.tgz#ee2ebf8e2cc0e2e2fd85be60fb1e70e17a06a5bf"
-  integrity sha512-a7fruuoQceFmEFI90wt12Mow33BEGnbSlMXqNqElSsridppsPdOxur8DM3xsqPSUZpkFX9aKULhzkJhhlu0m0A==
+"@rustraf/core-win32-x64-msvc@0.0.11":
+  version "0.0.11"
+  resolved "https://registry.npmjs.org/@rustraf/core-win32-x64-msvc/-/core-win32-x64-msvc-0.0.11.tgz#03c1fbe5654228c33956f3d7402ce2365f4d86a9"
+  integrity sha512-iVlq9TVEebLegMSq9oe1QuUd2b3xkL5YVz2Zbg0BlTHO2rtUdpIm8LAukE25N8dAw8ZSjWDZV7OfccaKAU93KA==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"
