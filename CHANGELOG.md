@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.11 (2022-06-14)
+
+
+### Bug Fixes
+
+* use of relative path ([4babdfb](https://github.com/stijnvanhulle/rustraf/commit/4babdfbb9f53c116a9308cdc21b7ff6c018688c9))
+
 ### 0.0.10 (2022-06-14)
 
 
