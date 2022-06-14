@@ -250,8 +250,7 @@ jobs:
 
       - name: Update generic package
         run: |
-          bash $GITHUB_WORKSPACE/.github/version.sh
-          npm publish --access public --registry https://registry.npmjs.org
+          bash $GITHUB_WORKSPACE/.github/publish_rustraf.sh
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

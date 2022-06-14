@@ -10,3 +10,4 @@ echo "Release version: $VERSION"
 
 cd ./packages/rustraf
 npm version $VERSION
+npm publish --access public --registry https://registry.npmjs.org
