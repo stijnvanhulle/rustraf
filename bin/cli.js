@@ -4,7 +4,7 @@ const yargs = require("yargs/yargs");
 const path = require("path");
 const fs = require("fs");
 const { hideBin } = require("yargs/helpers");
-const { removeFile } = require("../index");
+const rustraf = require("../index");
 
 const commands = hideBin(process.argv);
 
@@ -18,11 +18,15 @@ const builder = yargs(process.argv.slice(2))
       const files = commands;
 
       files.forEach((file) => {
-        if (fs.existsSync(file)) {
-          removeFile(file);
+        const pathTo = fs.existsSync(file)
+          ? file
+          : path.resolve(__dirname, file);
+        const isDirectory = fs.lstatSync(pathTo).isDirectory();
+
+        if (isDirectory) {
+          rustraf.removeDir(pathTo);
         } else {
-          console.log(path.resolve(__dirname, file));
-          removeFile(path.resolve(__dirname, file));
+          rustraf.removeFile(pathTo);
         }
       });
     }

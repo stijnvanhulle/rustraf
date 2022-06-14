@@ -4,7 +4,7 @@ import { dirname } from "path";
 import fs from "fs/promises";
 import { fileURLToPath } from "url";
 
-import { sum, removeFile } from "../index.js";
+import { sum, removeFile, removeDir } from "../index.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -18,5 +18,15 @@ test("remove file", async (t) => {
   await fs.writeFile(filePath, "Learn Node FS module");
 
   const ok = removeFile(filePath);
+  t.is(ok, true);
+});
+
+test("remove dir", async (t) => {
+  const dirPath = path.join(__dirname, "test");
+  try {
+    await fs.mkdir(dirPath);
+  } catch (e) {}
+
+  const ok = removeDir(dirPath);
   t.is(ok, true);
 });
