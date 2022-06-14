@@ -1,21 +1,21 @@
-# @rustraf/core
+# rustraf
 The [UNIX command](<http://en.wikipedia.org/wiki/Rm_(Unix)>) `rm -rf` for node written with Rust.
 
-<a href="https://www.npmjs.com/package/@rustraf/core">
-  <img alt="Npm verssion" src="https://img.shields.io/npm/v/@rustraf/core?style=for-the-badge"/>
+<a href="https://www.npmjs.com/package/rustraf">
+  <img alt="Npm verssion" src="https://img.shields.io/npm/v/rustraf?style=for-the-badge"/>
 </a>
 
-<a href="https://www.npmjs.com/package/@rustraf/core">
+<a href="https://www.npmjs.com/package/rustraf">
   <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/stijnvanhulle/rustraf?style=for-the-badge"/>
 </a>
 </br>
 
-<a href="https://www.npmjs.com/package/@rustraf/core">
-  <img alt="Npm downloads" src="https://img.shields.io/bundlephobia/min/@rustraf/core?style=for-the-badge"/>
+<a href="https://www.npmjs.com/package/rustraf">
+  <img alt="Npm downloads" src="https://img.shields.io/bundlephobia/min/rustraf?style=for-the-badge"/>
 </a>
 
-<a href="https://www.npmjs.com/package/@rustraf/core">
-  <img alt="Npm downloads" src="https://img.shields.io/npm/dm/@rustraf/core?style=for-the-badge"/>
+<a href="https://www.npmjs.com/package/rustraf">
+  <img alt="Npm downloads" src="https://img.shields.io/npm/dm/rustraf?style=for-the-badge"/>
 </a>
 
 
@@ -23,7 +23,7 @@ The [UNIX command](<http://en.wikipedia.org/wiki/Rm_(Unix)>) `rm -rf` for node w
 ## API
 
 ```
-import { remove, removeFile, removeDir } from "@rustraf/core";
+import { remove, removeFile, removeDir } from "rustraf";
 ```
 
 `remove(fileOrFolder)`
@@ -44,11 +44,11 @@ Remove a folder and all it's underlying content.
 If installed with
 
 ```
-npm install @rustraf/core -g
+npm install rustraf -g
 ```
 
 ```
-yarn global add @rustraf/core
+yarn global add rustraf
 ```
 
 it can be used as a global
