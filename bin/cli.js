@@ -21,13 +21,8 @@ const builder = yargs(process.argv.slice(2))
         const pathTo = fs.existsSync(file)
           ? file
           : path.resolve(__dirname, file);
-        const isDirectory = fs.lstatSync(pathTo).isDirectory();
 
-        if (isDirectory) {
-          rustraf.removeDir(pathTo);
-        } else {
-          rustraf.removeFile(pathTo);
-        }
+        rustraf.remove(pathTo);
       });
     }
   )

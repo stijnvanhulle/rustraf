@@ -8,6 +8,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 futures = "0.3"
+rm_rf = "0.6.2"
 # Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
 napi = { version = "2.5.0", default-features = false, features = [
   "napi8",

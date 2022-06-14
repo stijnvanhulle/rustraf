@@ -236,7 +236,8 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { removeDir, removeFile } = nativeBinding
+const { remove, removeDir, removeFile } = nativeBinding
 
+module.exports.remove = remove
 module.exports.removeDir = removeDir
 module.exports.removeFile = removeFile
