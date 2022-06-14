@@ -1,20 +1,20 @@
 # @rustraf/core
 The [UNIX command](<http://en.wikipedia.org/wiki/Rm_(Unix)>) `rm -rf` for node written with Rust.
 
-<a href="https://www.npmjs.com/package/rustraf">
+<a href="https://www.npmjs.com/package/@rustraf/core">
   <img alt="Npm verssion" src="https://img.shields.io/npm/v/@rustraf/core?style=for-the-badge"/>
 </a>
 
-<a href="https://www.npmjs.com/package/rustraf">
+<a href="https://www.npmjs.com/package/@rustraf/core">
   <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/stijnvanhulle/rustraf?style=for-the-badge"/>
 </a>
 </br>
 
-<a href="https://www.npmjs.com/package/rustraf">
+<a href="https://www.npmjs.com/package/@rustraf/core">
   <img alt="Npm downloads" src="https://img.shields.io/bundlephobia/min/@rustraf/core?style=for-the-badge"/>
 </a>
 
-<a href="https://www.npmjs.com/package/rustraf">
+<a href="https://www.npmjs.com/package/@rustraf/core">
   <img alt="Npm downloads" src="https://img.shields.io/npm/dm/@rustraf/core?style=for-the-badge"/>
 </a>
 
