@@ -43,10 +43,10 @@
     "standard-version": "^9.5.0"
   },
   "optionalDependencies": {
-    "@rustraf/core-win32-x64-msvc": "0.0.10",
-    "@rustraf/core-darwin-x64": "0.0.10",
-    "@rustraf/core-linux-x64-gnu": "0.0.10",
-    "@rustraf/core-darwin-arm64": "0.0.10"
+    "@rustraf/core-win32-x64-msvc": "0.0.11",
+    "@rustraf/core-darwin-x64": "0.0.11",
+    "@rustraf/core-linux-x64-gnu": "0.0.11",
+    "@rustraf/core-darwin-arm64": "0.0.11"
   },
   "engines": {
     "node": ">=14.18"
