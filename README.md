@@ -61,7 +61,7 @@ Removing node_modules with a size of 597,5 MB
 | Package | Speed                                         |
 |---------|-----------------------------------------------|
 | [rimraf](https://www.npmjs.com/package/rimraf)  | 1.61s user 11.26s system 218% cpu 5.899 total |
-| [rustraf](https://www.npmjs.com/package/rustraf) | 0.28s user 5.79s system 84% cpu 7.218 total   |
+| [@rustraf/core](https://www.npmjs.com/package/@rustraf/core) | 0.28s user 5.79s system 84% cpu 7.218 total   |
 | native(darwin-arm64) | 0.06s user 5.38s system 86% cpu 6.293 total |
 
 
