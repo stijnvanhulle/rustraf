@@ -1,6 +1,8 @@
 # rustraf
 The [UNIX command](<http://en.wikipedia.org/wiki/Rm_(Unix)>) `rm -rf` for node written with Rust.
 
+See https://www.npmjs.com/package/@rustraf/core
+
 <a href="https://www.npmjs.com/package/rustraf">
   <img alt="Npm verssion" src="https://img.shields.io/npm/v/rustraf?style=for-the-badge"/>
 </a>
