@@ -47,10 +47,10 @@
     "npm-check-updates": "^16.3.16"
   },
   "optionalDependencies": {
-    "@rustraf/core-win32-x64-msvc": "0.1.5",
-    "@rustraf/core-darwin-x64": "0.1.5",
-    "@rustraf/core-linux-x64-gnu": "0.1.5",
-    "@rustraf/core-darwin-arm64": "0.1.5"
+    "@rustraf/core-win32-x64-msvc": "0.1.6",
+    "@rustraf/core-darwin-x64": "0.1.6",
+    "@rustraf/core-linux-x64-gnu": "0.1.6",
+    "@rustraf/core-darwin-arm64": "0.1.6"
   },
   "engines": {
     "node": ">=14.18"
