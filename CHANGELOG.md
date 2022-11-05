@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.6 (2022-11-05)
+
+
+* packages npm and cargo ([2bfa8b5](https://github.com/stijnvanhulle/rustraf/commit/2bfa8b5008b04a5c96cc9fc45b7d899ee25b4e48))
+
 ### 0.1.5 (2022-06-15)
 
 ### 0.1.4 (2022-06-14)
