@@ -1,6 +1,6 @@
 {
     "name": "rustraf",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "Super-fast alternative for rimraf",
     "repository": {
         "type": "git",
@@ -16,10 +16,10 @@
         "upgrade": "ncu -u"
     },
     "optionalDependencies": {
-        "@rustraf/core-darwin-arm64": "^0.1.6",
-        "@rustraf/core-darwin-x64": "^0.1.6",
-        "@rustraf/core-linux-x64-gnu": "^0.1.6",
-        "@rustraf/core-win32-x64-msvc": "^0.1.6"
+        "@rustraf/core-darwin-arm64": "^0.1.7",
+        "@rustraf/core-darwin-x64": "^0.1.7",
+        "@rustraf/core-linux-x64-gnu": "^0.1.7",
+        "@rustraf/core-win32-x64-msvc": "^0.1.7"
     },
     "engines": {
         "node": ">=14.18"
@@ -34,9 +34,9 @@
     },
     "homepage": "https://github.com/stijnvanhulle/rustraf#readme",
     "dependencies": {
-        "@rustraf/core": "^0.1.6"
+        "@rustraf/core": "^0.1.7"
     },
     "devDependencies": {
-        "npm-check-updates": "^16.3.16"
+        "npm-check-updates": "^16.14.6"
     }
 }
